@@ -1,0 +1,19 @@
+
+Solution A without any changes: Last: accuracy = tensor(0.9798) Best: accuracy = tensor(0.9807)
+Solution A with revised model: Last: accuracy = tensor(0.9798) Best: accuracy = tensor(0.9858)
+
+Solution B: Last:  accuracy = tensor(0.9819) Best:  accuracy = tensor(0.9844)
+
+Solution C:   1relu/1pool/1dense accuracy = tensor(0.9865)      Best:  accuracy = tensor(0.9894)
+pool(ks=2)    2relu/2pool/1dense accuracy = tensor(0.9880)      Best:  accuracy = tensor(0.9885)
+              2relu/2pool/2dense accuracy = tensor(0.9854)      Best:  accuracy = tensor(0.9884)
+con(ks=4)     2relu/2pool/1dense accuracy = tensor(0.9881)      Best:  accuracy = tensor(0.9881)
+con(ks=4)     2relu/2pool/2dense accuracy = tensor(0.9851)      Best:  accuracy = tensor(0.9881))
+con(ks=4)     2relu/2pool/1dense/dropout/flatten                Best:  
+
+flatten dropout
+
+SolutionD: 
+con(ks=5) 2relu/2pool/1dense accuracy = tensor(0.8987)     Best: accuracy = tensor(0.8987)
+con(ks=4) 2relu/2pool/1dense accuracy = tensor(0.9024)   | Best: accuracy = tensor(0.9024)  
+con(ks=5) 2relu/2pool/2dense accuracy = tensor(0.9116)     Best: accuracy = tensor(0.9170)
